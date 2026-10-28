@@ -1,0 +1,98 @@
+
+/* Diseño general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f9;
+    margin: 0;
+    padding: 30px;
+    color: #444;
+}
+
+/* Título principal */
+h2 {
+    text-align: center;
+    color: #40566b;
+    background-color: #dceaf4;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+/* Formulario */
+form {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000010;
+    border: 1px solid #e1e8ee;
+}
+
+/* Espacio entre los campos */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Textos de los campos */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #536b7d;
+}
+
+/* Cajas de texto */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5dfe7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Campos que muestran los resultados */
+input:not([type="number"]) {
+    background-color: #f8fafc;
+}
+
+/* Botón de búsqueda */
+button {
+    background-color: #b9d6e8;
+    color: #30495b;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #a4c8de;
+}
+
+/* Efecto al seleccionar una caja */
+input:focus {
+    outline: 2px solid #c1dceb;
+    border-color: #9bbfd5;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 500px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
